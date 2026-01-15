@@ -119,14 +119,16 @@ export default function WeeklyTrendCard({ data, isDummy }) {
           </div>
         )}
 
+        <div className="weekly-setting-right">
         {/* 설정 버튼 */}
-        <div style={{ marginTop: 10 }}>
-          <button
-            className="chart-option-btn"
-            onClick={() => setShowSettings(true)}
-          >
-            ⚙ 그래프 설정
-          </button>
+          <div style={{ marginTop: 10 }}>
+            <button
+              className="chart-option-btn"
+              onClick={() => setShowSettings(true)}
+            >
+              ⚙ 그래프 설정
+            </button>
+          </div>
         </div>
       </div>
 

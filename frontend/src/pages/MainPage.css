@@ -153,10 +153,18 @@
   font-weight: 700;
   box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
 }
-.weekly-graph-setting{
+/* 상단 정보 영역 */
+.weekly-graph-setting {
   display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 왼쪽: 샘플 + 증감 */
+.weekly-graph-setting > div:first-child {
+  display: flex;
+  align-items: center;
   gap: 10px;
-  justify-content:space-between;
 }
 
 .weekly-card-body {
@@ -171,30 +179,34 @@
   color: #9ca3af;
   font-size: 14px;
 }
+/* 샘플 데이터 배지 */
 .weekly-dummy-badge {
-  display: inline-block;
-  padding: 4px 10px;
+  display: flex;                /* ✅ inline-block 제거 */
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
   font-size: 12px;
   border-radius: 999px;
   background: #eef2ff;
   color: #4338ca;
-  margin-bottom: 8px;
+  margin: 0;                    /* ❌ margin-bottom 제거 */
+  height: 32px;                 /* ✅ 높이 통일 */
 }
 
+/* 증감 배지 */
 .weekly-delta-badge {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 999px;
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin-left: 20px;
   justify-content: center;
-  width: 100px;
-  height: 40px;
-  margin-top: 10px;
+  gap: 4px;
 
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 12px;
+  border-radius: 999px;
+  width: auto;
+  height: 32px;                 /* ✅ 더미 배지와 동일 */
+  margin: 0;                    /* ❌ margin-top 제거 */
 }
 
 .weekly-delta-badge.up {
@@ -206,6 +218,20 @@
   background: #DCFCE7;
   color: #16A34A; /* 초록 */
 }
+/* ⚙ 그래프 설정 버튼을 오른쪽으로 밀어냄 */
+.weekly-setting-right {
+  margin-left: auto;      /* ⭐ 여기서 밀어냄 */
+  display: flex;
+  align-items: center;
+}
+
+.chart-option-btn {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+
 .chart-modal-backdrop {
   position: fixed;
   inset: 0;

@@ -10,7 +10,7 @@ export default function IntroPage() {
   return (
     <div className="intro-wrapper">
       <video autoPlay loop muted className="bg-video">
-        <source src="/public/videos/backvideo_6.mp4" type="video/mp4" />
+        <source src="/backvideo_6.mp4" type="video/mp4" />
       </video>
       <div className="robot-icon">
             🤖

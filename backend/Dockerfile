@@ -9,6 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 4. 프로젝트 전체 복사
+COPY db/agent.db ./db/agent.db
 COPY . .
 
 # 5. 포트 오픈

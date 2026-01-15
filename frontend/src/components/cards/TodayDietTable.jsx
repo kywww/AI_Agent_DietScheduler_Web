@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 const mealTypeLabel = {
   breakfast: "아침",
@@ -7,13 +8,15 @@ const mealTypeLabel = {
 };
 
 export default function TodayDietTable({ meals = [], loading }) {
+  const navigate = useNavigate();
+
   return (
     <div className="diet-table-section card">
       <div className="diet-table-head">
         <h3>오늘 식단</h3>
         <button
           className="diet-add-btn"
-          onClick={() => (window.location.href = "/diet")}
+          onClick={() => navigate("/diet")}
         >
           + 식단 추가
         </button>
