@@ -1,0 +1,31 @@
+# 웹 프레임워크
+Flask==2.3.3
+flask-cors==3.1.1
+flask-jwt-extended==4.4.4
+
+# 환경 변수 관리
+python-dotenv==1.0.1
+
+# HTTP 요청
+requests==2.31.0
+httpx==0.24.1
+
+# OpenAI API
+openai==1.31.0
+
+# DB 관련 (SQLite 기본 내장, 추가 라이브러리)
+SQLAlchemy==2.0.22
+Flask-SQLAlchemy==3.0.5
+
+# 데이터 처리/편의
+pandas==2.1.1
+numpy==1.26.4
+
+# 비밀번호 해싱 등 보안
+passlib[bcrypt]==1.7.4
+
+# JSON Web Token 추가 유틸
+PyJWT==2.8.1
+
+# CORS, 시리얼라이징 등
+marshmallow==3.21.3
