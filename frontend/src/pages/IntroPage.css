@@ -84,10 +84,10 @@
   margin-top: 1.5rem;
 }
 
-.intro-btn-secondary {
+/* .intro-btn-secondary {
   background-color: #f0f0f0;
   color: #333;
-}
+} */
 
 .intro-chat-preview {
   margin-top: 3rem;
@@ -95,11 +95,12 @@
   padding-top: 2rem;
 }
 
-.intro-btn-outline {
+/* .intro-btn-outline {
   background-color: #ffffff;
   color: #1e55c9;
   border: 1px solid #1e55c9;
-}
+} */
+ 
 /* 로봇 아이콘 스타일 및 애니메이션 적용 */
 .robot-icon {
     font-size: 100px; /* text-6xl 대체 */
